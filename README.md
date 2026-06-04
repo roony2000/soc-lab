@@ -19,3 +19,16 @@ Reports follow the Five Ws methodology.
 
 ## Goal
 Preparing for SOC L1 internship - September 2026
+
+
+
+
+## Other Reports
+
+### Incident Report
+Analysis of a security incident.
+- File: incident_report.md
+
+### Vulnerability Report  
+Assessment of system vulnerabilities.
+- File: vulnerability_report.md
