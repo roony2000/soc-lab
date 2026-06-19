@@ -1,0 +1,18 @@
+# Wazuh FIM Configuration — Bluesify Insider Threat Lab
+# File: ossec.conf (Windows 10 Agent)
+# Location: C:\Program Files (x86)\ossec-agent\ossec.conf
+# Author: Rian Khaled Ahmed Bin Salman | TP085645
+
+# Add this line inside the <syscheck> section:
+
+<directories realtime="yes" report_changes="yes" check_all="yes">
+  C:\Users\[USERNAME]\Desktop\CAD_Designs
+</directories>
+
+# Parameters explained:
+# realtime="yes"        — Detects changes instantly (not every 12 hours)
+# report_changes="yes"  — Records exactly what changed inside each file
+# check_all="yes"       — Monitors MD5/SHA1 checksums, permissions, ownership
+
+# After editing, restart the Wazuh Agent:
+# PowerShell (Admin): Restart-Service -Name WazuhSvc

@@ -1,0 +1,16 @@
+<!--
+  Bluesify Insider Threat Detection — Custom Wazuh Rules
+  Author: Rian Khaled Ahmed Bin Salman | TP085645
+  Module: CT128-3-2 ISC — Asia Pacific University (APU)
+-->
+
+<group name="local,syslog,sshd,">
+
+  <!-- Rule 100002: Insider Threat — CAD file exfiltration detection -->
+  <rule id="100002" level="12">
+    <if_sid>554</if_sid>
+    <description>Bluesify Insider Threat: CAD file added - possible data exfiltration by resigned employee</description>
+    <group>insider_threat,data_exfiltration,</group>
+  </rule>
+
+</group>
